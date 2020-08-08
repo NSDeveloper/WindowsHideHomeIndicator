@@ -9,7 +9,7 @@
 #import "SkinCoverRootViewController.h"
 
 @interface SkinCoverRootViewController ()
-
+@property (nonatomic,assign) BOOL autoHidden;
 @end
 
 @implementation SkinCoverRootViewController
@@ -18,12 +18,38 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    CGRect frame = self.view.frame;
-    CALayer *coverLayer = [CALayer layer];
-    coverLayer.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    CALayer *coverLayer = self.view.layer;
     coverLayer.backgroundColor = [UIColor colorWithRed:231/255.0 green:206/255.0 blue:119/255.0 alpha:1.0].CGColor;
     coverLayer.opacity = 0.2;
-    [self.view.layer addSublayer:coverLayer];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateHomeIndicator:) name:@"UpdateHomeIndicatorNotification" object:nil];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)updateHomeIndicator:(NSNotification *)notification {
+    BOOL autoHidden = [notification.object boolValue];
+    self.autoHidden = autoHidden;
+    if (@available(iOS 11.0, *)) {
+        [self setNeedsUpdateOfHomeIndicatorAutoHidden];
+    }
+}
+
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    return self.autoHidden;
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    if (orientation==UIInterfaceOrientationLandscapeLeft)return UIInterfaceOrientationMaskLandscapeLeft;
+    if (orientation==UIInterfaceOrientationLandscapeRight)return UIInterfaceOrientationMaskLandscapeRight;
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

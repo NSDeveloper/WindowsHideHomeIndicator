@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093C884924DE569C000097B0 /* SkinCoverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C884824DE569C000097B0 /* SkinCoverTool.m */; };
 		09A772D92382A988002A8C6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A772D82382A988002A8C6D /* AppDelegate.m */; };
 		09A772DC2382A989002A8C6D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A772DB2382A989002A8C6D /* FirstViewController.m */; };
 		09A772DF2382A989002A8C6D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A772DE2382A989002A8C6D /* SecondViewController.m */; };
@@ -15,10 +16,13 @@
 		09A772E72382A98A002A8C6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A772E52382A98A002A8C6D /* LaunchScreen.storyboard */; };
 		09A772EA2382A98A002A8C6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A772E92382A98A002A8C6D /* main.m */; };
 		09A772F22382A9A0002A8C6D /* SkinCoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A772F12382A9A0002A8C6D /* SkinCoverWindow.m */; };
+		09B7AEAC238BB7CA0081FF83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B7AEAB238BB7CA0081FF83 /* ViewController.m */; };
 		09F7131E2382AE3E00E02D1E /* SkinCoverRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7131D2382AE3E00E02D1E /* SkinCoverRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093C884724DE569C000097B0 /* SkinCoverTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinCoverTool.h; sourceTree = "<group>"; };
+		093C884824DE569C000097B0 /* SkinCoverTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinCoverTool.m; sourceTree = "<group>"; };
 		09A772D42382A988002A8C6D /* WindowsHideHomeIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowsHideHomeIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A772D72382A988002A8C6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09A772D82382A988002A8C6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		09A772E92382A98A002A8C6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09A772F02382A9A0002A8C6D /* SkinCoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinCoverWindow.h; sourceTree = "<group>"; };
 		09A772F12382A9A0002A8C6D /* SkinCoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinCoverWindow.m; sourceTree = "<group>"; };
+		09B7AEAA238BB7CA0081FF83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09B7AEAB238BB7CA0081FF83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		09F7131C2382AE3E00E02D1E /* SkinCoverRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinCoverRootViewController.h; sourceTree = "<group>"; };
 		09F7131D2382AE3E00E02D1E /* SkinCoverRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinCoverRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,10 +79,14 @@
 				09A772DB2382A989002A8C6D /* FirstViewController.m */,
 				09A772DD2382A989002A8C6D /* SecondViewController.h */,
 				09A772DE2382A989002A8C6D /* SecondViewController.m */,
+				09B7AEAA238BB7CA0081FF83 /* ViewController.h */,
+				09B7AEAB238BB7CA0081FF83 /* ViewController.m */,
 				09F7131C2382AE3E00E02D1E /* SkinCoverRootViewController.h */,
 				09F7131D2382AE3E00E02D1E /* SkinCoverRootViewController.m */,
 				09A772F02382A9A0002A8C6D /* SkinCoverWindow.h */,
 				09A772F12382A9A0002A8C6D /* SkinCoverWindow.m */,
+				093C884724DE569C000097B0 /* SkinCoverTool.h */,
+				093C884824DE569C000097B0 /* SkinCoverTool.m */,
 				09A772E02382A989002A8C6D /* Main.storyboard */,
 				09A772E32382A98A002A8C6D /* Assets.xcassets */,
 				09A772E52382A98A002A8C6D /* LaunchScreen.storyboard */,
@@ -159,6 +169,8 @@
 				09A772DF2382A989002A8C6D /* SecondViewController.m in Sources */,
 				09F7131E2382AE3E00E02D1E /* SkinCoverRootViewController.m in Sources */,
 				09A772D92382A988002A8C6D /* AppDelegate.m in Sources */,
+				09B7AEAC238BB7CA0081FF83 /* ViewController.m in Sources */,
+				093C884924DE569C000097B0 /* SkinCoverTool.m in Sources */,
 				09A772EA2382A98A002A8C6D /* main.m in Sources */,
 				09A772F22382A9A0002A8C6D /* SkinCoverWindow.m in Sources */,
 				09A772DC2382A989002A8C6D /* FirstViewController.m in Sources */,

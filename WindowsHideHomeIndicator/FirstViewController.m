@@ -20,6 +20,7 @@
 }
 
 - (BOOL)prefersHomeIndicatorAutoHidden {
+    ///!!!: NOT work when has a skin window
     return YES;
 }
 
